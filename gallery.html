@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Портфолио — реализованные интерьеры | Елена Галактионова</title>
+<meta name="description" content="Портфолио дизайнера интерьера Елены Галактионовой: кухни-гостиные, прихожие, гардеробные и рабочие места с фильтром по помещению и стилю.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <span class="brand-name">Елена Галактионова</span>
+      <span class="brand-tag">дизайнер интерьера</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="services.html">Услуги</a>
+      <a href="gallery.html">Портфолио</a>
+      <a href="about.html">Обо мне</a>
+      <a href="values.html">Ценности</a>
+      <a href="reviews.html">Отзывы</a>
+      <a href="blog.html">Блог</a>
+      <a href="faq.html">FAQ</a>
+      <a href="promo.html">Акции</a>
+    </nav>
+    <div class="header-actions">
+      <div class="header-social">
+        <a href="https://vk.ru/id48713235" target="_blank" rel="noopener" aria-label="VK">VK</a>
+        <a href="https://web.max.ru/138985188" target="_blank" rel="noopener" aria-label="MAX">MAX</a>
+      </div>
+      <a class="btn btn-primary header-cta" href="https://wa.me/79191196655" target="_blank" rel="noopener">Написать в WhatsApp</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="services.html">Услуги</a>
+    <a href="gallery.html">Портфолио</a>
+    <a href="about.html">Обо мне</a>
+    <a href="values.html">Ценности</a>
+    <a href="reviews.html">Отзывы</a>
+    <a href="blog.html">Блог</a>
+    <a href="faq.html">FAQ</a>
+    <a href="promo.html">Акции</a>
+    <a class="btn btn-primary" href="https://wa.me/79191196655" target="_blank" rel="noopener">Написать в WhatsApp</a>
+    <div class="social-links" style="margin-top:6px;">
+      <a href="https://vk.ru/id48713235" target="_blank" rel="noopener" aria-label="VK">VK</a>
+      <a href="https://web.max.ru/138985188" target="_blank" rel="noopener" aria-label="MAX">MAX</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Главная</a> / Портфолио</p>
+      <p class="eyebrow">Портфолио</p>
+      <h1>Кадры с реализованных объектов</h1>
+      <p class="lead">Фильтруйте по типу помещения и стилю, чтобы быстрее найти похожую на вашу задачу. Четыре истории с подробным описанием — на этой же странице ниже.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+
+      <div class="filter-row">
+        <div class="filter-group" data-filter-group="room">
+          <span class="filter-group-label">Помещение</span>
+          <button class="filter-btn is-active" data-filter-value="all" type="button">Все</button>
+          <button class="filter-btn" data-filter-value="hallway" type="button">Прихожая</button>
+          <button class="filter-btn" data-filter-value="closet" type="button">Гардеробная</button>
+          <button class="filter-btn" data-filter-value="kitchen" type="button">Кухня</button>
+          <button class="filter-btn" data-filter-value="living" type="button">Гостиная</button>
+          <button class="filter-btn" data-filter-value="office" type="button">Рабочее место</button>
+        </div>
+      </div>
+      <div class="filter-row">
+        <div class="filter-group" data-filter-group="style">
+          <span class="filter-group-label">Стиль</span>
+          <button class="filter-btn is-active" data-filter-value="all" type="button">Все</button>
+          <button class="filter-btn" data-filter-value="modern" type="button">Современный</button>
+          <button class="filter-btn" data-filter-value="minimalism" type="button">Минимализм</button>
+          <button class="filter-btn" data-filter-value="neoclassic" type="button">Неоклассика</button>
+        </div>
+      </div>
+
+      <div class="ba-grid">
+        <article class="ba-card" data-tags="hallway neoclassic">
+          <img src="images/gallery/project-01.jpg" alt="Прихожая с системой хранения, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Прихожая</h3>
+            <p class="ba-sub">Встроенные шкафы и консоль с зеркалом</p>
+            <div class="ba-tags"><span class="tag-chip">Прихожая</span><span class="tag-chip">Неоклассика</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="closet neoclassic">
+          <img src="images/gallery/project-02.jpg" alt="Угловая гардеробная, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Гардеробная</h3>
+            <p class="ba-sub">Угловая система хранения от пола до потолка</p>
+            <div class="ba-tags"><span class="tag-chip">Гардеробная</span><span class="tag-chip">Неоклассика</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="kitchen living modern">
+          <img src="images/gallery/project-03.jpg" alt="Кухня-гостиная с зоной отдыха, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Кухня-гостиная</h3>
+            <p class="ba-sub">Остров, обеденная зона и мягкая зона отдыха</p>
+            <div class="ba-tags"><span class="tag-chip">Кухня</span><span class="tag-chip">Гостиная</span><span class="tag-chip">Современный</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="kitchen modern">
+          <img src="images/gallery/project-04.jpg" alt="Кухня с обеденной зоной, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Кухня</h3>
+            <p class="ba-sub">Кухонный остров с интегрированной подсветкой</p>
+            <div class="ba-tags"><span class="tag-chip">Кухня</span><span class="tag-chip">Современный</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="kitchen living modern">
+          <img src="images/gallery/project-05.jpg" alt="Кухня-гостиная, вид от обеденного стола, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Кухня-гостиная</h3>
+            <p class="ba-sub">Общее пространство кухни и гостиной</p>
+            <div class="ba-tags"><span class="tag-chip">Кухня</span><span class="tag-chip">Гостиная</span><span class="tag-chip">Современный</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="kitchen modern">
+          <img src="images/gallery/project-06.jpg" alt="Кухонные фасады и обеденная зона, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Кухня</h3>
+            <p class="ba-sub">Фасады, каменный фартук и обеденная зона</p>
+            <div class="ba-tags"><span class="tag-chip">Кухня</span><span class="tag-chip">Современный</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="living modern">
+          <img src="images/gallery/project-07.jpg" alt="Гостиная с ТВ-зоной и витриной, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Гостиная</h3>
+            <p class="ba-sub">ТВ-зона и витрина для посуды и декора</p>
+            <div class="ba-tags"><span class="tag-chip">Гостиная</span><span class="tag-chip">Современный</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="office modern">
+          <img src="images/gallery/project-08.jpg" alt="Рабочее место у окна, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Рабочее место</h3>
+            <p class="ba-sub">Компактный кабинет у окна с витриной рядом</p>
+            <div class="ba-tags"><span class="tag-chip">Рабочее место</span><span class="tag-chip">Современный</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="kitchen modern">
+          <img src="images/gallery/project-09.jpg" alt="Система хранения на кухне, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Хранение на кухне</h3>
+            <p class="ba-sub">Выдвижные системы для посуды и утвари</p>
+            <div class="ba-tags"><span class="tag-chip">Кухня</span><span class="tag-chip">Современный</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="hallway minimalism">
+          <img src="images/interior-01.jpg" alt="Прихожая, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Прихожая</h3>
+            <p class="ba-sub">Светлая входная группа</p>
+            <div class="ba-tags"><span class="tag-chip">Прихожая</span><span class="tag-chip">Минимализм</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="living minimalism">
+          <img src="images/interior-02.jpg" alt="Гостиная, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Гостиная</h3>
+            <p class="ba-sub">Светлое, спокойное пространство</p>
+            <div class="ba-tags"><span class="tag-chip">Гостиная</span><span class="tag-chip">Минимализм</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="kitchen living minimalism">
+          <img src="images/interior-03.jpg" alt="Кухня-гостиная, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Кухня-гостиная</h3>
+            <p class="ba-sub">Единое пространство для всей семьи</p>
+            <div class="ba-tags"><span class="tag-chip">Кухня</span><span class="tag-chip">Гостиная</span><span class="tag-chip">Минимализм</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="kitchen minimalism">
+          <img src="images/interior-04.jpg" alt="Кухня с обеденной зоной, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Кухня</h3>
+            <p class="ba-sub">Обеденная зона у окна</p>
+            <div class="ba-tags"><span class="tag-chip">Кухня</span><span class="tag-chip">Минимализм</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="living minimalism">
+          <img src="images/interior-05.jpg" alt="Гостиная с ТВ-зоной, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Гостиная</h3>
+            <p class="ba-sub">ТВ-зона для семейных вечеров</p>
+            <div class="ba-tags"><span class="tag-chip">Гостиная</span><span class="tag-chip">Минимализм</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="office minimalism">
+          <img src="images/interior-06.jpg" alt="Рабочее место у окна, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Рабочее место</h3>
+            <p class="ba-sub">Тихий уголок для учёбы и работы</p>
+            <div class="ba-tags"><span class="tag-chip">Рабочее место</span><span class="tag-chip">Минимализм</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="kitchen minimalism">
+          <img src="images/interior-07.jpg" alt="Система хранения на кухне, реализованный проект" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Хранение на кухне</h3>
+            <p class="ba-sub">«Каждой вещи своё место»</p>
+            <div class="ba-tags"><span class="tag-chip">Кухня</span><span class="tag-chip">Минимализм</span></div>
+          </div>
+        </article>
+        <article class="ba-card" data-tags="living minimalism">
+          <img src="images/interior-08.jpg" alt="Реализованный интерьер" loading="lazy">
+          <div class="ba-card-body">
+            <h3>Гостиная</h3>
+            <p class="ba-sub">Спокойная светлая палитра</p>
+            <div class="ba-tags"><span class="tag-chip">Гостиная</span><span class="tag-chip">Минимализм</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="projects">
+    <div class="container">
+      <p class="eyebrow center">Истории проектов</p>
+      <h2 class="center">Четыре семьи — четыре разные задачи</h2>
+
+      <div class="portfolio-grid" style="margin-top:44px;">
+
+        <article class="project-card project-card--davinci" data-project="davinci">
+          <div class="project-card-top">
+            <span class="project-tag">Эко, минимализм</span>
+            <h3>L Town «Да Винчи»</h3>
+            <p class="project-meta">Челябинск · 2025 · 127,45 м²</p>
+          </div>
+          <p class="project-summary">
+            Двухэтажный дом для семьи из пяти человек, увлечённых музыкой и искусством.
+            Натуральный камень и кварцит в сочетании с деревом и бетоном, каминная зона,
+            портал в кухню.
+          </p>
+          <button class="text-link project-toggle" type="button" aria-expanded="false">Подробнее о проекте →</button>
+          <div class="project-details">
+            <p><strong>Заказчики:</strong> Оксана и Евгений</p>
+            <p><strong>Пожелания:</strong> дом для семьи, которая ценит натуральные материалы
+              и живую музыку в доме. Одна из задач проекта — сочетание натурального камня
+              и кварцита с деревом и бетоном. Отдельно спроектированы каминная зона
+              и портал в кухню.</p>
+          </div>
+        </article>
+
+        <article class="project-card project-card--motiv" data-project="motiv">
+          <div class="project-card-top">
+            <span class="project-tag">Неоклассика</span>
+            <h3>ЖК «Мотив»</h3>
+            <p class="project-meta">Челябинск · 2024 · 42 м²</p>
+          </div>
+          <p class="project-summary">
+            Квартира для активного бизнесмена: сдержанное пространство с элементами
+            классики и роскоши, продуманные зоны хранения и умный дом.
+          </p>
+          <button class="text-link project-toggle" type="button" aria-expanded="false">Подробнее о проекте →</button>
+          <div class="project-details">
+            <p><strong>Заказчик:</strong> Сергей</p>
+            <p><strong>Пожелания:</strong> заказчик много путешествует и ценит комфортное,
+              современное и сдержанное пространство. Важной задачей стали зоны хранения —
+              «каждой вещи своё место», чтобы легко поддерживать порядок.</p>
+            <p><strong>Технические задачи:</strong> вентиляция на лоджии, система «умный дом»
+              (безопасность, комфорт, удобство), сценарии освещения с управлением голосом
+              через Алису.</p>
+          </div>
+        </article>
+
+        <article class="project-card project-card--ravny" data-project="ravny">
+          <div class="project-card-top">
+            <span class="project-tag">Минимализм</span>
+            <h3>ЖК «Равный»</h3>
+            <p class="project-meta">Челябинск · 2025 · 87,25 м²</p>
+          </div>
+          <p class="project-summary">
+            Квартира для семьи из трёх человек, где любят вместе смотреть телевизор —
+            и при этом важно личное пространство каждого.
+          </p>
+          <button class="text-link project-toggle" type="button" aria-expanded="false">Подробнее о проекте →</button>
+          <div class="project-details">
+            <p><strong>Заказчики:</strong> Юлия, Дмитрий, Елена</p>
+            <p><strong>Пожелания:</strong> общая зона для просмотра телевизора всей семьёй
+              и отдельное личное пространство для каждого. Комнату для дочери-подростка
+              оформили с розовыми элементами декора, которые легко заменить в будущем.</p>
+          </div>
+        </article>
+
+        <article class="project-card project-card--parkovy" data-project="parkovy">
+          <div class="project-card-top">
+            <span class="project-tag">Эко, минимализм</span>
+            <h3>ЖК «Парковый Премиум»</h3>
+            <p class="project-meta">Челябинск · 2023 · 85 м²</p>
+          </div>
+          <p class="project-summary">
+            Квартира для семьи из пяти человек: графит, дерево и припылённые цвета,
+            уютное пространство для каждого — от подростка до двойняшек.
+          </p>
+          <button class="text-link project-toggle" type="button" aria-expanded="false">Подробнее о проекте →</button>
+          <div class="project-details">
+            <p><strong>Заказчики:</strong> Елена, Олег, Ангелина, Арина, Алиса</p>
+            <p><strong>Технические задачи:</strong> в комнате подростка — спальное место
+              на татами с системой хранения и зоной для занятий; в комнате близняшек —
+              одинаковые зоны отдыха и рабочее место школьника; спальня родителей
+              оформлена в тёмных тонах с зоной хранения напротив кровати.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Хотите похожий результат?<br>Обсудим ваш проект</h2>
+      <a class="btn btn-primary" href="https://wa.me/79191196655" target="_blank" rel="noopener">Написать в WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer" id="contacts">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <span class="brand-name">Елена Галактионова</span>
+      <p>Дизайнер интерьера в Челябинске. Квартиры, дома, офисы —
+        от планировки до фотореалистичной визуализации.</p>
+      <div class="social-links">
+        <a href="https://wa.me/79191196655" target="_blank" rel="noopener" aria-label="WhatsApp">WA</a>
+        <a href="https://vk.ru/id48713235" target="_blank" rel="noopener" aria-label="VK">VK</a>
+        <a href="https://web.max.ru/138985188" target="_blank" rel="noopener" aria-label="MAX">MAX</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Навигация</h4>
+      <a href="services.html">Услуги</a>
+      <a href="gallery.html">Портфолио</a>
+      <a href="about.html">Обо мне</a>
+      <a href="values.html">Ценности</a>
+    </div>
+    <div class="footer-col">
+      <h4>Информация</h4>
+      <a href="reviews.html">Отзывы</a>
+      <a href="blog.html">Блог</a>
+      <a href="faq.html">FAQ</a>
+      <a href="promo.html">Акции</a>
+    </div>
+    <div class="footer-col">
+      <h4>Контакты</h4>
+      <a href="tel:+79191196655">+7 919 119 66 55</a>
+      <a href="https://wa.me/79191196655" target="_blank" rel="noopener">Написать в WhatsApp</a>
+      <span class="footer-city">г. Челябинск</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Елена Галактионова. Дизайн интерьера.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
