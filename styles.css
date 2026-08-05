@@ -261,6 +261,17 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   flex-direction: column;
   position: relative;
 }
+.service-media {
+  margin: -30px -26px 20px;
+  overflow: hidden;
+  border-radius: calc(var(--radius) - 1px) calc(var(--radius) - 1px) 0 0;
+}
+.service-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
 .service-card-featured {
   background: var(--graphite);
   border-color: var(--graphite);
@@ -323,6 +334,17 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   border-radius: var(--radius);
   padding: 30px 28px;
   border-top: 4px solid var(--accent);
+}
+.project-media {
+  margin: -26px -28px 20px;
+  overflow: hidden;
+  border-radius: calc(var(--radius) - 4px) calc(var(--radius) - 4px) 0 0;
+}
+.project-media img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
 }
 .project-card--davinci { border-top-color: #7a8b6f; }
 .project-card--motiv { border-top-color: #33415c; }
