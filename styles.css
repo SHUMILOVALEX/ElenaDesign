@@ -393,17 +393,12 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .project-card.is-open .project-details { max-height: 400px; }
 .project-toggle { margin-top: 4px; }
 
-.gallery-block { margin-top: 70px; }
-.gallery-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
-  margin-top: 40px;
-}
-.gallery-grid img {
-  border-radius: 10px;
-  aspect-ratio: 4 / 5;
-  object-fit: cover;
+.portfolio-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 36px;
 }
 
 /* CTA banner */
@@ -447,13 +442,11 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   .values-grid { grid-template-columns: repeat(2, 1fr); }
   .services-grid { grid-template-columns: 1fr; }
   .portfolio-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 760px) {
   .values-grid { grid-template-columns: 1fr; }
-  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
   .hero-stats { gap: 24px; }
 }
 
@@ -582,8 +575,20 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .ba-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
 .tag-chip { font-size: 0.72rem; padding: 4px 11px; border-radius: 999px; background: var(--bg-alt); color: var(--ink-soft); }
 
-/* Before and after */
-#before-after, #dom-43, #implementation { scroll-margin-top: 115px; }
+/* Portfolio navigation and comparisons */
+.portfolio-nav { border-bottom: 1px solid var(--border); }
+.portfolio-nav .container { display: flex; flex-wrap: wrap; gap: 24px; }
+.portfolio-nav a {
+  padding: 14px 0 11px;
+  border-bottom: 3px solid transparent;
+  color: var(--ink-soft);
+  font-weight: 700;
+  text-decoration: none;
+}
+.portfolio-nav a:hover, .portfolio-nav a[aria-current="page"] { color: var(--accent-dark); }
+.portfolio-nav a[aria-current="page"] { border-bottom-color: var(--accent-dark); }
+.comparison h2 { font-size: 1.25rem; }
+#dom-43, #implementation { scroll-margin-top: 115px; }
 .comparison-photos { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
 .comparison figure, .offer-examples figure { margin: 0; }
 .comparison img {
