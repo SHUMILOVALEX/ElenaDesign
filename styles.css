@@ -399,7 +399,33 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 }
 .project-details p { font-size: 0.92rem; margin-top: 14px; margin-bottom: 0; }
 .project-card.is-open .project-details { max-height: 400px; }
-.project-toggle { margin-top: 4px; }
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 8px 20px;
+  margin-top: 4px;
+}
+.project-story { max-width: 780px; }
+.project-story p:last-child { margin-bottom: 0; }
+.project-photo {
+  margin: 0;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.project-photo a { display: block; }
+.project-photo a:focus-visible { outline: 3px solid var(--accent-dark); outline-offset: -3px; }
+.project-photo img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
+  background: var(--bg);
+}
+.project-photo figcaption { padding: 12px 16px; color: var(--ink-soft); font-size: 0.9rem; }
+#projects { scroll-margin-top: 115px; }
 
 .portfolio-links {
   display: flex;
