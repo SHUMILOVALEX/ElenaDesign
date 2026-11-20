@@ -707,6 +707,16 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .offer-steps { color: var(--ink-soft); padding-left: 24px; margin: 16px 0 22px; }
 .offer-steps li { border-bottom: 1px solid var(--border); padding: 8px 0; }
 .offer-steps strong { display: inline-block; color: var(--graphite); white-space: nowrap; margin-left: 8px; }
+.offer-followup {
+  padding: 14px 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.offer-followup summary + p { margin: 12px 0 8px; }
+.offer-followup ul { margin: 0 0 12px; padding-left: 20px; color: var(--ink-soft); }
+.offer-followup li + li { margin-top: 6px; }
+.offer-followup p:last-child { margin: 0; }
 .offer-examples { margin-top: 36px; }
 .offer-examples img {
   width: 100%;
