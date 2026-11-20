@@ -439,6 +439,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   background: var(--bg);
 }
 .project-photo figcaption { padding: 12px 16px; color: var(--ink-soft); font-size: 0.9rem; }
+#projects { scroll-margin-top: 115px; }
 
 .portfolio-links {
   display: flex;

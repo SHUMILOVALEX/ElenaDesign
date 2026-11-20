@@ -35,7 +35,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
   if (new URL(document.baseURI).searchParams.get('section') === 'projects') {
     var projectStories = document.getElementById('projects');
-    if (projectStories) projectStories.scrollIntoView({ behavior: 'instant' });
+    if (projectStories) {
+      var scrollToStories = function () {
+        document.fonts.ready.then(function () {
+          projectStories.scrollIntoView({ behavior: 'instant' });
+        });
+      };
+
+      // An HTML preview can apply the stylesheet after this script runs.
+      if (getComputedStyle(projectStories).scrollMarginTop === '0px' && 'ResizeObserver' in window) {
+        var storiesLayout = new ResizeObserver(function () {
+          if (getComputedStyle(projectStories).scrollMarginTop === '0px') return;
+          storiesLayout.disconnect();
+          scrollToStories();
+        });
+        storiesLayout.observe(document.body);
+      } else {
+        scrollToStories();
+      }
+    }
   }
 
   // FAQ accordion
