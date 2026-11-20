@@ -391,6 +391,20 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
   margin-bottom: 10px;
 }
 .project-meta { font-size: 0.86rem; color: var(--ink-soft); margin-bottom: 14px; }
+.project-card-top--with-photo {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(64px, 10vw, 112px);
+  align-items: start;
+  gap: clamp(10px, 2vw, 20px);
+  margin-bottom: 14px;
+}
+.project-card-top--with-photo .project-meta { margin-bottom: 0; }
+.project-card-top--with-photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 8px;
+}
 .project-summary { margin-bottom: 12px; }
 .project-details {
   max-height: 0;
