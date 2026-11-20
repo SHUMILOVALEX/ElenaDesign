@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (href === path) link.classList.add('is-current');
   });
 
+  if (new URL(document.baseURI).searchParams.get('section') === 'projects') {
+    var projectStories = document.getElementById('projects');
+    if (projectStories) projectStories.scrollIntoView({ behavior: 'instant' });
+  }
+
   // FAQ accordion
   document.querySelectorAll('.accordion-item').forEach(function (item) {
     var q = item.querySelector('.accordion-q');
