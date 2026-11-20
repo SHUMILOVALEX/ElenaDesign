@@ -526,6 +526,7 @@ p { margin: 0 0 16px; color: var(--ink-soft); }
 .timeline-item p { margin: 0; }
 
 /* Accordion (FAQ) */
+.accordion { max-width: 772px; }
 .accordion-item { border-bottom: 1px solid var(--border); }
 .accordion-q {
   width: 100%;
